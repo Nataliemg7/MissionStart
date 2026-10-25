@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission 3 - Sort the Materials</title>
+  <link rel="stylesheet" href="mission3.css">
+</head>
+
+<body>
+  <main class="game">
+
+    <h1>🌟 Mission Start</h1>
+    <h2>Mission 3: Sort the Materials</h2>
+
+    <section id="welcomeScreen">
+      <p>
+        Help organise the building materials!
+        Sometimes you'll sort by colour,
+        and sometimes you'll sort by shape.
+      </p>
+
+      <p>
+        Watch the rule carefully — it can change!
+      </p>
+
+      <div class="welcomeIcon">🔴 🔵 🟦</div>
+      <button id="startButton">Start Mission</button>
+    </section>
+
+    <section id="gameScreen" hidden>
+      <p id="trialProgress"></p>
+
+      <div id="rulePanel">
+        <h3 id="ruleText"></h3>
+      </div>
+
+      <div id="shapeArea" aria-label="Shape to sort">
+        <div id="shape"></div>
+      </div>
+
+      <p>Where does this material belong?</p>
+
+      <div id="answerButtons"></div>
+
+      <p id="feedback" aria-live="polite"></p>
+    </section>
+
+    <section id="resultsScreen" hidden>
+      <h2>🎉 Sorting Complete!</h2>
+      <div id="results"></div>
+
+      <button id="restartButton">Play Again</button>
+      <p><a href="home.html">Return to Main Menu</a></p>
+    </section>
+
+  </main>
+
+  <script src="mission3.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+body {
+  margin: 0;
+  background: #eaf5ff;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.game {
+  background: white;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #00000015;
+}
+
+h1 {
+  color: #3565a3;
+}
+
+.truck {
+  font-size: 100px;
+  margin: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  max-width: 450px;
+  margin: 25px auto;
+}
+
+.cell {
+  aspect-ratio: 1;
+  background: #e8f5e9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.wall {
+  background: #ffd8c2;
+}
+
+.goal {
+  background: #b8e6c0;
+}
+
+.truckCell {
+  background: #b8d8f5;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  background: #398b3d;
+}
+
+button:disabled {
+  background: #999;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+#feedback {
+  min-height: 25px;
+  font-weight: bold;
+}
+
+#results {
+  background: #f1f8e9;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+[hidden] {
+  display: none !important;
+}

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission 4 - Control the Traffic</title>
+  <link rel="stylesheet" href="mission4.css">
+</head>
+
+<body>
+  <main class="game">
+    <h1>🚦 Mission Start</h1>
+    <h2>Mission 4: Control the Traffic</h2>
+
+    <section id="welcomeScreen">
+      <p>
+        You're the traffic controller!
+        Press GO when the light is green.
+        Don't press anything when the light is red.
+      </p>
+
+      <p>
+        Each light appears briefly, so watch carefully!
+      </p>
+
+      <div class="welcomeIcon">🚦</div>
+      <button id="startButton">Start Mission</button>
+    </section>
+
+    <section id="gameScreen" hidden>
+      <p id="trialProgress"></p>
+
+      <div id="trafficLight">
+        <div id="redLight" class="light"></div>
+        <div id="greenLight" class="light"></div>
+      </div>
+
+      <p id="signalText">Get ready...</p>
+
+      <button id="goButton">🚗 GO!</button>
+
+      <p id="feedback" aria-live="polite"></p>
+    </section>
+
+    <section id="resultsScreen" hidden>
+      <h2>🎉 Traffic Mission Complete!</h2>
+      <div id="results"></div>
+
+      <button id="restartButton">Play Again</button>
+      <p><a href="home.html">Return to Main Menu</a></p>
+    </section>
+  </main>
+
+  <script src="mission4.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Start</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="game">
+
+    <h1>🏡 Mission Start</h1>
+    <h2>Mission 1: Build the House</h2>
+
+    <!-- WELCOME SCREEN -->
+    <section id="welcomeScreen">
+      <p>Welcome, builder!</p>
+      <p>
+        Complete nine building challenges by following
+        the instructions on the screen.
+      </p>
+      <div class="house">🏠</div>
+      <button id="startButton">Start Mission</button>
+    </section>
+
+    <!-- GAME SCREEN -->
+    <section id="gameScreen" hidden>
+      <h3 id="roundTitle"></h3>
+      <p id="roundDescription"></p>
+
+      <div id="instructionPanel"></div>
+
+      <button id="reviewButton" type="button" hidden>
+        Show Instructions Again
+      </button>
+
+      <div id="buildingArea">
+        <div id="buildingDisplay">🏞️</div>
+      </div>
+
+      <p>Choose your next building piece:</p>
+      <div id="pieceButtons" class="pieces"></div>
+
+      <p id="feedback" aria-live="polite"></p>
+      <p id="progress"></p>
+      <p id="challengeProgress"></p>
+    </section>
+
+    <!-- BETWEEN CHALLENGES -->
+    <section id="betweenScreen" hidden>
+      <h2>⭐ Great work!</h2>
+      <p id="betweenMessage"></p>
+      <button id="nextButton">Next Building Challenge</button>
+    </section>
+
+    <!-- RESULTS DASHBOARD -->
+    <section id="resultsScreen" hidden>
+      <h2>📊 Mission Results</h2>
+      <p>
+        Here's how you performed with each type
+        of instruction support.
+      </p>
+
+      <h3>Incorrect Attempts by Instruction Type</h3>
+      <div id="errorChart" class="chart"></div>
+
+      <h3>Performance Summary</h3>
+      <div id="results"></div>
+
+      <button id="downloadButton">⬇ Download Results (CSV)</button>
+      <button id="restartButton">Play Again</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

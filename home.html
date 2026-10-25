@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Start - Choose Your Mission</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #eaf5ff;
+      font-family: Arial, sans-serif;
+      color: #333;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 25px;
+    }
+
+    h1 {
+      color: #3565a3;
+      font-size: 38px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    .missions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .missionCard {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px #00000015;
+    }
+
+    .missionIcon {
+      font-size: 75px;
+      margin: 15px;
+    }
+
+    .missionCard h2 {
+      color: #3565a3;
+    }
+
+    .missionCard p {
+      line-height: 1.6;
+    }
+
+    .playButton {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 15px 20px;
+      background: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .playButton:hover {
+      background: #398b3d;
+    }
+
+    @media (max-width: 750px) {
+      .missions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>🌟 Mission Start</h1>
+
+    <p class="subtitle">
+      Welcome, explorer! Choose your next adventure.
+    </p>
+
+    <div class="missions">
+
+      <section class="missionCard">
+        <div class="missionIcon">🏠</div>
+        <h2>Mission 1: Build the House</h2>
+        <p>
+          Follow instructions and build your house
+          using different learning supports.
+        </p>
+        <a class="playButton" href="index.html">
+          Play Mission 1
+        </a>
+      </section>
+
+      <section class="missionCard">
+        <div class="missionIcon">🚚</div>
+        <h2>Mission 2: Deliver the Supplies</h2>
+        <p>
+          Plan a route, avoid barriers and
+          deliver supplies to the school.
+        </p>
+        <a class="playButton" href="mission2.html">
+          Play Mission 2
+        </a>
+      </section>
+
+      <section class="missionCard">
+        <div class="missionIcon">🔴</div>
+        <h2>Mission 3: Sort the Materials</h2>
+        <p>
+          Sort objects by colour or shape,
+          and adapt when the rule changes.
+        </p>
+        <a class="playButton" href="mission3.html">
+          Play Mission 3
+        </a>
+      </section>
+
+      <section class="missionCard">
+        <div class="missionIcon">🚦</div>
+        <h2>Mission 4: Control the Traffic</h2>
+        <p>
+          Respond to green signals and stop
+          yourself from responding to red signals.
+        </p>
+        <a class="playButton" href="mission4.html">
+          Play Mission 4
+        </a>
+      </section>
+
+    </div>
+    
+<section style="margin-top: 30px; text-align: center;">
+  <a href="teacher.html"
+     style="
+       display: inline-block;
+       background: #3565a3;
+       color: white;
+       padding: 15px 25px;
+       border-radius: 12px;
+       text-decoration: none;
+       font-size: 18px;
+       font-weight: bold;
+     ">
+    📋 Open Teacher Dashboard
+  </a>
+</section>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+body {
+  margin: 0;
+  background: #eaf5ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+.game {
+  background: white;
+  max-width: 720px;
+  margin: 35px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #00000015;
+}
+
+h1 {
+  color: #3565a3;
+}
+
+h2 {
+  color: #444;
+}
+
+.house {
+  font-size: 100px;
+  margin: 20px;
+}
+
+#instructionPanel {
+  background: #fff8df;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  text-align: left;
+  min-height: 55px;
+}
+
+#reviewButton {
+  background: #3565a3;
+  margin: 5px 0 15px;
+  font-size: 15px;
+}
+
+#buildingArea {
+  background: #e8f5e9;
+  border: 3px dashed #81c784;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+#buildingDisplay {
+  font-size: 85px;
+}
+
+.pieces {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #398b3d;
+}
+
+button:disabled {
+  background: #999;
+  cursor: default;
+}
+
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 25px;
+}
+
+#progress {
+  color: #555;
+}
+
+#challengeProgress {
+  color: #3565a3;
+  font-weight: bold;
+}
+
+#results {
+  background: #f1f8e9;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.resultCard {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #dce7ef;
+  text-align: left;
+}
+
+.resultCard h3 {
+  color: #3565a3;
+}
+
+.checklistItem {
+  padding: 7px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* RESULTS CHART */
+
+.chart {
+  background: #f7fbff;
+  border: 1px solid #dce7ef;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.chartRow {
+  margin: 18px 0;
+  text-align: left;
+}
+
+.chartLabel {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.chartTrack {
+  background: #e0e7ef;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 28px;
+}
+
+.chartBar {
+  background: #4b8bd8;
+  height: 100%;
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.chartValue {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+#downloadButton {
+  background: #3565a3;
+  margin: 10px;
+}
+
+#restartButton {
+  margin: 10px;
+}
+
+[hidden] {
+  display: none !important;
+}

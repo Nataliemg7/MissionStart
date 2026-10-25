@@ -1,0 +1,88 @@
+
+body {
+  margin: 0;
+  background: #eaf5ff;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.game {
+  background: white;
+  max-width: 680px;
+  margin: 35px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #00000015;
+}
+
+h1 {
+  color: #3565a3;
+}
+
+.welcomeIcon {
+  font-size: 100px;
+  margin: 25px;
+}
+
+#trafficLight {
+  background: #293343;
+  width: 120px;
+  padding: 18px;
+  border-radius: 25px;
+  margin: 25px auto;
+}
+
+.light {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #59616d;
+  margin: 12px auto;
+}
+
+.redActive {
+  background: #f05a55;
+  box-shadow: 0 0 25px #f05a55;
+}
+
+.greenActive {
+  background: #44cb7b;
+  box-shadow: 0 0 25px #44cb7b;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background: #398b3d;
+}
+
+button:disabled {
+  background: #999;
+  cursor: default;
+}
+
+#feedback {
+  min-height: 25px;
+  font-weight: bold;
+}
+
+#results {
+  background: #f1f8e9;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+[hidden] {
+  display: none !important;
+}

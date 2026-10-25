@@ -1,0 +1,154 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eaf5ff;
+  font-family: Arial, sans-serif;
+  color: #303943;
+}
+
+.dashboard {
+  max-width: 920px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 25px;
+}
+
+header h1 {
+  color: #3565a3;
+}
+
+a {
+  color: #3565a3;
+}
+
+.panel {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px #00000010;
+}
+
+.panel h2 {
+  color: #3565a3;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 16px 0 7px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b8c9d8;
+  border-radius: 10px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.hint {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.missionCard {
+  border: 1px solid #dce7ef;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+  background: #f8fbff;
+}
+
+.missionCard h3 {
+  margin-top: 0;
+}
+
+.status {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  background: #f5f8fb;
+  cursor: pointer;
+}
+
+.option input {
+  width: 19px;
+  height: 19px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.option span {
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.secondary {
+  background: #3565a3;
+}
+
+.danger {
+  background: #b84a4a;
+}
+
+#saveMessage {
+  font-weight: bold;
+  color: #3565a3;
+}
+
+@media (max-width: 650px) {
+  .dashboard {
+    padding: 12px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}

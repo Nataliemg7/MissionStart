@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission Start - Teacher Dashboard</title>
+  <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+  <main class="dashboard">
+
+    <header>
+      <a href="home.html">← Main Menu</a>
+      <h1>📋 Teacher Dashboard</h1>
+      <p>Understand task behaviour and plan classroom support.</p>
+    </header>
+
+    <section class="panel">
+      <h2>1. Session Information</h2>
+
+      <label for="studentCode">Anonymous pupil code</label>
+      <input id="studentCode" type="text"
+        placeholder="Example: P001" maxlength="30">
+
+      <p class="hint">
+        Use an anonymous code, not the child's name.
+      </p>
+
+      <label for="sessionDate">Session date</label>
+      <input id="sessionDate" type="date">
+    </section>
+
+    <section class="panel">
+      <h2>2. Game Performance</h2>
+      <p>
+        Each mission examines a different aspect of
+        task performance.
+      </p>
+
+      <div id="missionCards"></div>
+
+      <p class="hint">
+        Automatic game results will be connected in Step 14B.
+        No scores are inferred from missing data.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>3. Teacher Observations</h2>
+      <p>
+        Select behaviours you observed during this session.
+        These are observations, not diagnoses.
+      </p>
+
+      <div id="observationList"></div>
+
+      <label for="teacherNotes">Additional observations</label>
+      <textarea id="teacherNotes" rows="4"
+        placeholder="What happened? What helped?"></textarea>
+    </section>
+
+    <section class="panel">
+      <h2>4. Classroom Support Plan</h2>
+      <p>
+        Choose adjustments to try during ordinary
+        classroom activities.
+      </p>
+
+      <div id="supportList"></div>
+
+      <label for="targetBehaviour">What will we monitor?</label>
+      <textarea id="targetBehaviour" rows="3"
+        placeholder="Example: Starting an independent task after instructions"></textarea>
+
+      <label for="reviewDate">Review date</label>
+      <input id="reviewDate" type="date">
+    </section>
+
+    <section class="panel">
+      <h2>5. Save Your Session</h2>
+
+      <div class="actions">
+        <button id="saveButton">Save Draft</button>
+        <button id="downloadButton" class="secondary">
+          Download Report
+        </button>
+        <button id="clearButton" class="danger">
+          Clear Draft
+        </button>
+      </div>
+
+      <p id="saveMessage" aria-live="polite"></p>
+
+      <p class="hint">
+        Drafts are stored in this browser only.
+        Download a report before clearing browser data.
+        Do not use identifiable pupil information in
+        this prototype.
+      </p>
+    </section>
+
+  </main>
+
+  <script src="teacher.js"></script>
+</body>
+</html>

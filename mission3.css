@@ -1,0 +1,110 @@
+
+body {
+  margin: 0;
+  background: #eaf5ff;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.game {
+  background: white;
+  max-width: 680px;
+  margin: 35px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #00000015;
+}
+
+h1 {
+  color: #3565a3;
+}
+
+.welcomeIcon {
+  font-size: 70px;
+  margin: 25px;
+}
+
+#rulePanel {
+  background: #fff8df;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+#shapeArea {
+  background: #f3f8ff;
+  border-radius: 15px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#shape {
+  width: 110px;
+  height: 110px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 8px;
+}
+
+.red {
+  background: #e65d5d;
+}
+
+.blue {
+  background: #528ee2;
+}
+
+#answerButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #398b3d;
+}
+
+button:disabled {
+  background: #999;
+}
+
+#feedback {
+  font-weight: bold;
+  min-height: 30px;
+  margin-top: 20px;
+}
+
+#results {
+  background: #f1f8e9;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+#trialProgress {
+  color: #3565a3;
+  font-weight: bold;
+}
+
+[hidden] {
+  display: none !important;
+}

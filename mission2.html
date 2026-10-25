@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission 2 - Deliver the Supplies</title>
+  <link rel="stylesheet" href="mission2.css">
+</head>
+<body>
+
+  <main class="game">
+    <h1>🚚 Mission Start</h1>
+    <h2>Mission 2: Deliver the Supplies</h2>
+
+    <section id="welcomeScreen">
+      <p>
+        Help the truck deliver supplies to the school!
+        Plan your route and avoid construction barriers.
+      </p>
+      <div class="truck">🚚</div>
+      <button id="startButton">Start Mission</button>
+    </section>
+
+    <section id="gameScreen" hidden>
+      <p id="instructions">
+        Move the truck to the school without hitting barriers.
+      </p>
+
+      <div id="grid" class="grid"></div>
+
+      <div class="controls">
+        <button id="upButton">↑ Up</button>
+        <div>
+          <button id="leftButton">← Left</button>
+          <button id="downButton">↓ Down</button>
+          <button id="rightButton">→ Right</button>
+        </div>
+      </div>
+
+      <p id="feedback" aria-live="polite"></p>
+      <p id="progress"></p>
+    </section>
+
+    <section id="resultsScreen" hidden>
+      <h2>🎉 Delivery Complete!</h2>
+      <div id="results"></div>
+      <button id="restartButton">Play Again</button>
+      <p><a href="index.html">Return to Mission 1</a></p>
+    </section>
+  </main>
+
+  <script src="mission2.js"></script>
+</body>
+</html>
